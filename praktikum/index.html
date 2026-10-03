@@ -14,14 +14,17 @@
     <h1>Informasi Mahasiswa Sistem Informasi</h1>
 
     <nav aria-label="Navigasi utama">
-      <a class="nav-link" href="#profil">Profil</a>
-      <a class="nav-link" href="#potensi">Potensi</a>
-      <a class="nav-link" href="#kontak">Kontak</a>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#profil">Profil</a></li>
+        <li><a class="nav-link" href="#potensi">Potensi</a></li>
+        <li><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <div class="page-layout">
 
+  <main>
     <article id="profil" class="card">
       <h2>Profil Daerah</h2>
 
@@ -38,10 +41,30 @@
     <section id="potensi" class="card">
       <h2>Potensi Daerah</h2>
 
-      <p>
-        Daerah saya memiliki potensi dalam bidang pendidikan,
-        pariwisata, kuliner, dan kegiatan masyarakat.
-      </p>
+      <div class="card-list">
+        <article class="card card--featured">
+          <span class="badge">Unggulan</span>
+          <h3>Pendidikan</h3>
+          <p>
+            Daerah saya memiliki potensi dalam bidang pendidikan.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Pariwisata</h3>
+          <p>
+            Daerah saya memiliki potensi dalam bidang pariwisata.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Kuliner</h3>
+          <p>
+            Daerah saya memiliki potensi dalam bidang kuliner.
+          </p>
+        </article>
+
+      </div>
     </section>
 
     <section id="kontak" class="">
@@ -83,6 +106,12 @@
     </section>
 
   </main>
+
+  <aside aria-labelledby="info-tambahan">
+    <h2 id="info-tambahan">Informasi Tambahan</h2>
+    <p>Tambahkan informasi yang relevan dengan proyek.</p>
+  </aside>
+  </div>
 
   <footer>
     <p>Dibuat untuk Website Programming.</p>

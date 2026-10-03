@@ -38,14 +38,23 @@ main {
 h1,
 h2,
 h3 {
-    lone-height: 1.2;
+    line-height: 1.2;
 }
 
 p {
     max-width: 65ch;
 }
 
-nav-link {
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
     color: var(--color-primary);
     padding: var(--space-1);
     text-underline-offset: 0.2em;
@@ -133,3 +142,64 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
+.page-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: flex-start;
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+.page-layout > main {
+  flex: 1 1 36rem;
+  min-width: 0;
+  margin-inline: 0;
+}
+
+.page-layout > aside {
+  flex: 1 1 16rem;
+  padding: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.card-list > .card {
+  flex: 1 1 16rem;
+}
+
+.card--featured {
+  position: relative;
+  padding-block-start: 3rem;
+}
+
+.badge {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  color: #ffffff;
+  background: var(--color-primary);
+  border-radius: var(--radius);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+a,
+p {
+  overflow-wrap: anywhere;
+}
