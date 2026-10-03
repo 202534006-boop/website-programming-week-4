@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Mahasiswa Sistem Informasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Informasi Mahasiswa Sistem Informasi</h1>
+
+    <nav aria-label="Navigasi utama">
+      <a class="nav-link" href="#profil">Profil</a>
+      <a class="nav-link" href="#potensi">Potensi</a>
+      <a class="nav-link" href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="profil" class="card">
+      <h2>Profil Daerah</h2>
+
+      <p>
+        Daerah saya merupakan daerah yang memiliki lingkungan
+        yang nyaman dan masyarakat yang ramah.
+      </p>
+
+      <img src="images/daerah.jpg"
+     alt=" Daerah saya memiliki potensi dalam bidang pendidikan,
+        pariwisata, kuliner, dan kegiatan masyarakat">
+    </article>
+
+    <section id="potensi" class="card">
+      <h2>Potensi Daerah</h2>
+
+      <p>
+        Daerah saya memiliki potensi dalam bidang pendidikan,
+        pariwisata, kuliner, dan kegiatan masyarakat.
+      </p>
+    </section>
+
+    <section id="kontak" class="">
+      <h2>Kirim Pesan</h2>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="nama">Nama lengkap</label>
+          <input id="nama"
+                 name="nama"
+                 type="text"
+                 autocomplete="name"
+                 required>
+        </div>
+
+        <div>
+          <label for="email">Alamat email</label>
+          <input id="email"
+                 name="email"
+                 type="email"
+                 autocomplete="email"
+                 required>
+        </div>
+
+        <div>
+          <label for="pesan">Pesan</label>
+          <p id="petunjuk-pesan">Isi pesan minimal 10 karakter.</p>
+          <textarea id="pesan"
+          name="pesan"
+          minlength="10"
+          required
+          aria-describedby="petunjuk-pesan"></textarea>
+        </div>
+
+        <button type="submit">Kirim pesan</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Dibuat untuk Website Programming.</p>
+  </footer>
+
+</body>
+
+</html>
