@@ -55,6 +55,10 @@ p {
 }
 
 .nav-link {
+    display: inline-block;
+}
+
+.nav-link {
     color: var(--color-primary);
     padding: var(--space-1);
     text-underline-offset: 0.2em;
